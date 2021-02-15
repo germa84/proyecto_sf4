@@ -19,8 +19,5 @@ class LuckyController extends AbstractController
         [
             'number' => $number,
         ]);
-        return new Response(
-            '<html><body>Lucky number: '.$number.'</body></html>'
-        );
     }
 }
