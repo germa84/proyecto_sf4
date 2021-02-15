@@ -1,0 +1,12 @@
+{# templates/lucky/number.html.twig #}
+{% for i in 1..20 %}
+    <div>
+        <h1>Esto es un título. Iteración:{{ i }}</h1>
+    </div>
+{% endfor %}
+<h1>Your lucky number is {{ number }}</h1>
+{% if number > 10 %}
+<div>El número es mayor a 10</div>
+{% else %}
+<div> El número es menor o igual a 10</div>
+{% endif %}
